@@ -1,0 +1,55 @@
+.column {
+  float: left;
+  padding: 0 15px;
+
+  &--left {
+    width: 24.6%;
+
+    @media (max-width: 768px) {
+      width: 27%;
+      margin-bottom: 20px;
+      margin-right: 13px;
+    }
+
+    @media (max-width: 320px) {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 20px;
+    }
+  }
+
+  &--center {
+    width: 54%;
+
+    @media (max-width: 768px) {
+      width: calc(73% - 13px);
+      float: right;
+    }
+
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+  }
+
+  &--right {
+    width: 21.4%;
+
+    @media (max-width: 768px) {
+      width: 27%;
+    }
+
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
+  &__row {
+    @media (max-width: 768px) {
+      margin: 0 -7.5px;
+    }
+  }
+}

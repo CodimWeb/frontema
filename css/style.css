@@ -1,0 +1,105 @@
+body {
+  overflow-x: hidden;
+  background: #fff; }
+
+.full-width {
+  width: 100%; }
+
+body,
+html {
+  height: 100%; }
+
+@media (max-width: 320px) {
+  .hidden-320 {
+    display: none; } }
+
+.visible-320 {
+  display: none; }
+  @media (max-width: 320px) {
+    .visible-320 {
+      display: block; } }
+
+.column {
+  float: left;
+  padding: 0 15px; }
+  .column--left {
+    width: 24.6%; }
+    @media (max-width: 768px) {
+      .column--left {
+        width: 27%;
+        margin-bottom: 20px;
+        margin-right: 13px; } }
+    @media (max-width: 320px) {
+      .column--left {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 20px; } }
+  .column--center {
+    width: 54%; }
+    @media (max-width: 768px) {
+      .column--center {
+        width: calc(73% - 13px);
+        float: right; } }
+    @media (max-width: 320px) {
+      .column--center {
+        width: 100%; } }
+  .column--right {
+    width: 21.4%; }
+    @media (max-width: 768px) {
+      .column--right {
+        width: 27%; } }
+    @media (max-width: 320px) {
+      .column--right {
+        width: 100%; } }
+  @media (max-width: 768px) {
+    .column {
+      padding: 0; } }
+  @media (max-width: 768px) {
+    .column__row {
+      margin: 0 -7.5px; } }
+
+.item--center {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px; }
+  @media (max-width: 768px) {
+    .item--center {
+      margin-bottom: 30px;
+      width: 33.333%;
+      padding: 0 7.5px; } }
+  @media (max-width: 320px) {
+    .item--center {
+      width: 50%;
+      padding: 0 9px;
+      margin-bottom: 20px; } }
+  .item--center:nth-child(5) {
+    clear: both; }
+    @media (min-width: 321px) and (max-width: 768px) {
+      .item--center:nth-child(5) {
+        clear: none; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .item--center:nth-child(4) {
+      clear: left; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .item--center:nth-child(7) {
+      clear: left; } }
+  @media (max-width: 320px) {
+    .item--center:nth-child(odd) {
+      clear: left; } }
+
+.container-fluid {
+  padding: 0 30px; }
+  .container-fluid > .row {
+    margin: 0 -15px; }
+    @media (max-width: 768px) {
+      .container-fluid > .row {
+        margin: 0; } }
+  @media (max-width: 768px) {
+    .container-fluid {
+      padding: 0 15px; } }
+
+.header {
+  background: #88a3d6;
+  min-height: 60px;
+  margin-bottom: 30px; }

@@ -1,0 +1,26 @@
+body {
+  overflow-x: hidden;
+  background: #fff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.hidden-320 {
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
+
+.visible-320 {
+  display: none;
+  @media (max-width: 320px) {
+    display: block;
+  }
+}
