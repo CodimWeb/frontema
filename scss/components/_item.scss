@@ -18,24 +18,21 @@
       margin-bottom: 20px;
     }
 
-    &:nth-child(5) {
-      clear: both;
-
-      @media (min-width: 321px) and (max-width: 768px) {
-        clear: none;
+    &:nth-child(4n+4) {
+      +div {
+        clear: both;
+        
+        @media (min-width: 321px) and (max-width: 768px) {
+          clear: none;
+        }
       }
     }
 
-
-    &:nth-child(4) {
+    &:nth-child(3n+3) {
       @media (min-width: 321px) and (max-width: 768px) {
-        clear: left;
-      }
-    }
-
-    &:nth-child(7) {
-      @media (min-width: 321px) and (max-width: 768px) {
-        clear: left;
+        &+div {
+          clear: left;
+        }
       }
     }
 
